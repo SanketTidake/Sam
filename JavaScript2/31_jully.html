@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+   <img src="https://tse4.mm.bing.net/th?id=OIP.dL8PSLSNI6RiuyEtd7zUdgHaEo&pid=Api&P=0&h=180" width="300px" height="400px">
+
+	<h1></h1>
+	<h1></h1>
+	<h1></h1>
+	<button onclick="MSD()">Data Get</button> 
+
+
+	<h1 align="center" style="color:orange; background-color:black"> This is Title</h1>
+	<button onclick="setData()">Click</button>
+
+	<script type="text/javascript">
+
+		function MSD() 
+	    {
+			var path=document.getElementsByTagName('img')[0].src;
+			document.getElementsByTagName('h1')[0].innerText=path;
+
+			var w=document.getElementsByTagName('img')[0].width;
+			document.getElementsByTagName('h1')[1].innerText=w;
+
+			var h=document.getElementsByTagName('img')[0].height;
+			document.getElementsByTagName('h1')[2].innerText=h;
+		}
+
+
+
+
+
+        function setData()
+        {
+        	document.getElementsByTagName('h1')[0].innerText="New Data";
+        	document.getElementsByTagName('h1')[0].align="left";
+        	document.getElementsByTagName('h1')[0].style.color="teal";
+        	document.getElementsByTagName('h1')[0].style.backgroundColor="skyblue";
+        
+        }
+
+		function getData()
+		{
+           var text=document.getElementsByTagName('h1')[0].innerText;
+           console.log(text);
+
+           var st=document.getElementsByTagName('h1')[0].align;
+           console.log(st);
+
+           var color=document.getElementsByTagName('h1')[0].style.color;
+           console.log(color);
+
+           var bc=document.getElementsByTagName('h1')[0].style.backgroundColor;
+           console.log(bc);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 align="center" style="color: orange;"> This is Title</h1>
+	<button onclick="getData()">Click</button>
+
+	<script type="text/javascript">
+        function setData()
+        {
+        	document.getElementsByTagName('h1')[0].innerText="New Data";
+        	document.getElementsByTagName('h1')[0].align="left";
+        	document.getElementsByTagName('h1')[0].style.color="teal";
+        
+        }
+
+		function getData()
+		{
+           var text=document.getElementsByTagName('h1')[0].innerText;
+           console.log(text);
+
+           var st=document.getElementsByTagName('h1')[0].align;
+           console.log(st);
+
+           var color=document.getElementsByTagName('h1')[0].style.color;
+           console.log(color);
+		}
+	</script>
+
+</body>
+</html>

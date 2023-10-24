@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button onclick="p()">POP</button>
+	<button onclick="push()">PUSH</button>
+	<button onclick="s()">Shift</button>
+	<button onclick="unShift()">UnShift</button>
+	<button onclick="del()">Splice</button>
+	<button onclick="add()"> Add Splice</button>
+
+	<script type="text/javascript">
+
+	var arr=[10,20,30,40];
+	console.log(arr);
+
+	function del()
+	{
+		arr.splice(1,1);
+		console.log(arr);
+	}
+
+	function add()
+	{
+		var num=prompt("Enter Your Number");
+        arr.splice(1,0,num);
+        console.log(arr);
+        var l=arr.length;
+        console.log(l);
+    }
+
+	function p()
+	{
+		arr.pop();
+		console.log(arr);
+	}
+
+	function push()
+	{
+		var d=prompt("Enter Your data");
+		arr.push(d);
+		console.log(arr);
+	}
+
+	function s()
+	{
+		arr.shift();
+		console.log(arr);
+	}
+
+	 function unShift()
+    {
+    	var s=prompt("Enter Your Data");
+    	arr.unshift(s);
+    	console.log(arr);
+    }
+
+    </script>
+
+</body>
+</html>

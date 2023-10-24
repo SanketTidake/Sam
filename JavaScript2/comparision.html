@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// var sallarry=prompt("enter your salary");
+		// if(sallarry>700000)
+		// {
+        //    document.write('pay the 10% income tax');
+		// }
+		// else
+		// {
+		// 	document.write('no income tax');
+		// }
+
+
+
+		var age=prompt('Enter Your Age');
+		var VoterId=prompt("Ask There ID Yes/No");
+		var Location=prompt('Ask Location');
+		var username=prompt('Enter User Name');
+		var userpassword=prompt('Enter User Password');
+
+		if(age>=18)
+		{
+			document.write("You Can Vote");
+			document.write('<br>');
+
+			if(VoterId=="Yes")
+			{
+				document.write("You Can Vote");
+				document.write('<br>');
+
+				if(Location=='Pune')
+				{
+					document.write('Done');
+					document.write('<br>');
+
+					if(username=="ST07")
+					{
+						document.write("User Name Match");
+						document.write('<br>');
+						if(userpassword=="Sam.07")
+						{
+							document.write("Password Match");
+						}
+						else
+						{
+							document.write("Wrong Password");
+							document.write('<br>');
+							document.write("*Reenter Password*");
+						}
+					}
+					else
+					{
+						document.write("Wrong User Name");
+						document.write('<br>');
+						document.write("*Reenter User Name*<br>");
+						document.write('<br>');
+
+						if(userpassword=="Sam.07")
+						{
+							document.write("User Password is Correct");
+						}
+						else
+						{
+							document.write("Your Password is Incorrect");
+						}
+					}
+
+				}
+				else
+				{
+					document.write("Go To "+Location+" For Voting");
+				}
+			}
+			else
+			{
+				document.write("Show your Voter ID");
+			}
+		}
+		else
+		{
+			document.write("Sorry Next Time");
+			document.write('<br>');
+			var wait=(18-age);
+			document.write("Wait For: "+wait+" Year");
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// var a=10;
+		// var b=10;
+		// document.write( (a==b) );
+		// document.write("<br>");
+
+		// document.write( (a===b) );
+		// document.write("<br>");
+
+		// document.write( (a>=b) );
+		// document.write("<br>");
+
+		// var c=10;
+		// var d=20;
+		// document.write( (c==d) );
+		// document.write("<br>");
+
+		// document.write( (c<d) );
+		// document.write("<br>");
+
+		// document.write( (c>d) );
+		// document.write("<br>");
+
+	</script>
+
+</body>
+</html>

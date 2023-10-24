@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*p::first-letter{
+              font-size: 25px;
+              color: orange;
+              text-shadow: 2px 2px 2px blue;
+		}
+		p::first-line{
+			color: blue;
+			font-size: 20px;
+			background-color: yellow;
+		}*/
+		b::before{
+                content: '"';  
+		}
+		b::after{
+			content: '"';
+		}
+		button::before{
+			content: '';
+			width: 15px;
+			height: 15px;
+			background-color: blue;
+			display: flex;
+
+		}
+		button::after{
+			content: '';
+			width: 15px;
+			height: 15px;
+			background-color: blue;
+			display: flex;
+			clip-path: polygon(50% 0%, 0% 100%,100% 100%);
+		}
+		section:hover{
+			background-color: blue;
+			color: white;
+			padding: 20px;
+			border: 2px solid red;
+			border-radius: 50px;
+			transform: rotate(360deg);
+		}
+		button:hover{
+			transform: scale(2);
+			transition-duration: 2s;
+		}
+		p:first-child{
+			background-color: yellow;
+		}
+		p:last-child{
+			background-color: tomato;
+		}
+		p:nth-child(4){
+			background-color: green;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<hr>
+
+	<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+	<br>
+
+	<button>Submit</button><br>
+
+	<b>This Is A Heading</b>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

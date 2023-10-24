@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		div{
+			text-align: center;
+		}
+		div button{
+			background-color: orange;
+			padding: 15px 25px;
+			margin: 5px;
+			border-radius: 50px;
+		}
+		#Login{
+            background-color: yellowgreen;
+            padding: 10px;
+		}
+		#Register{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+		}
+	</style>
+</head>
+<body>
+      <div>
+      	<button id="A">Login</button>
+      	<button id="B">Register</button>
+      </div>
+
+      <section id="Login">
+      	<h1 align="center">Login Page Here</h1>
+      	
+      </section>
+       <section id="Register">
+      	<h1 align="center">Registration Page Here</h1>
+      </section>
+
+      <script type="text/javascript">
+      	$('#Login').show();
+      	$('#Register').hide();
+
+      	$('#A').click(function(){
+      		$('#Login').show();
+      		$('#Register').hide();
+      	})
+
+      	$('#B').click(function(){
+      		$('#Login').hide();
+      		$('#Register').show();
+      	})
+
+      </script>
+
+</body>
+</html>

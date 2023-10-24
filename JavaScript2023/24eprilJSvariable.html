@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		button{
+			background-color: skyblue;
+			padding: 10px 20px;
+			margin: 10px;
+			border-radius: 50px;
+		}
+		span{
+			background-color: orange;
+			padding: 20px;
+			border-radius: 45%;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+    <button onclick="likeFun()">Like</button><span></span><br><br>
+    <button onclick="dislikeFun()">DisLike</button><span></span><br><br>
+
+	<script type="text/javascript">
+
+		var l=0;
+		var d=0;
+
+		function likeFun()
+		{
+			l++;
+			document.getElementsByTagName('span')[0].innerText=l;
+		}
+
+		function dislikeFun()
+		{
+			d++;
+			document.getElementsByTagName('span')[1].innerText=d;
+		}
+
+
+	</script>
+
+</body>
+</html>

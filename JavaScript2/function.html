@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button onclick="ST()">Call The Function</button>
+	<button onclick="add()">Total</button>
+	<h1></h1>
+	<h2></h2>
+	<h2></h2>
+	<h1></h1>
+
+	<script type="text/javascript">
+		function ST() {
+			var getData='Sanket';
+			var getData=prompt("Enter Your Data");
+			console.log(getData);
+			document.getElementsByTagName('h1')[0].innerText=getData;
+
+		}	
+
+			function add(argument) {
+				var num1=prompt("Enter First Number");
+				var num2=prompt("Enter Second Number");
+				var sum=parseInt (num1) + parseInt(num2); 
+
+				document.getElementsByTagName('h2')[0].innerText='First No :'+ num1;
+				document.getElementsByTagName('h2')[1].innerText='Second No :'+num2;
+				document.getElementsByTagName('h1')[1].innerText='Total :'+sum;
+			}
+		
+	</script>
+
+
+</body>
+</html>

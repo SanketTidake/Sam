@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="username" value="Sam" placeholder="Enter User name" size="200" id="AA" pattern="dddd" minlength="20" maxlength="50" style="background-color: orange; padding: 13px; margin: 20px; color: white;">
+
+	<h1></h1>
+
+	<img src="ST.jpg" width="300" height="200" alt="this is image">
+	<img src="">
+
+	<script type="text/javascript">
+		var a=document.getElementsByTagName('img')[1];
+
+		a.src='https://tse1.mm.bing.net/th?id=OIP.3ASJSRy03PAtNYOTM-RQwgHaFj&pid=Api&rs=1&c=1&qlt=95&w=144&h=107';
+		a.width='500';
+		a.height='200';
+		a.alt='this is second image';
+
+		var b=document.getElementsByTagName('img')[0];
+
+		b.src='https://tse1.mm.bing.net/th?id=OIP.3ASJSRy03PAtNYOTM-RQwgHaFj&pid=Api&rs=1&c=1&qlt=95&w=144&h=107';
+		b.width='500';
+		b.height='200';
+		b.alt='this is second image';
+
+
+
+
+
+		var obj=document.getElementsByTagName('input')[0];
+		var obj2=document.getElementsByTagName('img')[0];
+		document.getElementsByTagName('h1')[0].innerText=obj2.src;
+	</script>
+
+</body>
+</html>

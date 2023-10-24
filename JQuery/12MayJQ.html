@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.head , .foot{
+			background-color: black;
+			padding: 20px;
+		}
+		.papa{
+			display: flex;
+		}
+		.aside{
+			flex: 1;
+			background-color: lightgray;
+			padding: 7px;
+
+		}
+		.content{
+			flex: 5;
+			height: 90vh;
+			padding: 7px;
+		}
+		.aside button{
+			display: block;
+			padding: 6px;
+			margin: 5px;
+			width: 100%;
+			background-color: teal;
+			color: white;
+			border-radius: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		
+	</div>
+
+	<section class="papa">
+		<section class="aside">
+			<button id="H">Home</button>
+			<button id="A">About</button>
+			<button id="S">Service</button>
+			<button id="C">Contact</button>
+			<button id="L">login</button>
+			
+			
+		</section>
+		<section class="content">
+			<section id="HH">
+				<h1>This Is Home Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section id="AA">
+				<h1>This Is About Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section id="SS">
+				<h1>This Is Service Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section id="CC">
+				<h1>This Is Contact Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section id="LL">
+				<h1>This Is Login Page</h1>
+				<label>Enter User Name</label>
+				<input type="text" name=""><br>
+				<br>
+				<label>Enter Password</label>
+				<input type="password" name="">
+			</section>
+			
+		</section>
+		
+	</section>
+
+	<div class="foot">
+		
+	</div>
+
+	<script type="text/javascript">
+		$('#H').click(function(){
+			$('#HH').show();
+			$('#AA').hide();
+			$('#SS').hide();
+			$('#CC').hide();
+			$('#LL').hide();
+		})
+		$('#A').click(function(){
+			$('#HH').hide();
+			$('#AA').show();
+			$('#SS').hide();
+			$('#CC').hide();
+			$('#LL').hide();
+		})
+		$('#S').click(function(){
+			$('#HH').hide();
+			$('#AA').hide();
+			$('#SS').show();
+			$('#CC').hide();
+			$('#LL').hide();
+		})
+		$('#C').click(function(){
+			$('#HH').hide();
+			$('#AA').hide();
+			$('#SS').hide();
+			$('#CC').show();
+			$('#LL').hide();
+		})
+		$('#L').click(function(){
+			$('#HH').hide();
+			$('#AA').hide();
+			$('#SS').hide();
+			$('#CC').hide();
+			$('#LL').show();
+		})
+	</script>
+
+
+</body>
+</html>

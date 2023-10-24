@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		table{
+			margin: 20px;
+			background-color: greenyellow;
+		}
+		td{
+			padding: 20px;
+		}
+		h2{
+			background-color: orange;
+			padding: 6px;
+		}
+		input{
+			padding: 7px;
+		}
+		button{
+			background-color: blue;
+			color: white;
+			border-radius: 50px;
+			padding: 10px 20px;
+			margin: 5px;
+		}
+		
+	</style>
+</head>
+<body>
+		<h1>Data Transfer App</h1>
+	    <table width="100%" border="2">
+	    	<tr>
+	    		<td>
+
+	    			<h2>Current Address</h2>
+	    			<label>House Number:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Village Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Tal Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Dist Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>State Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<button onclick="diffdata()">Different Address</button>
+	    			<button onclick="sameadd()">If Same Address</button>
+	    		</td>
+	    		<td>
+	    			<h2>Permanant Address</h2>
+	    			<label>House Number:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Village Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Tal Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>Dist Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    			<label>State Name:</label><br>
+	    			<input type="text" name=""><br><br>
+
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	    			<h2>Current Address Output</h2>
+	    			<p><b>House Number</b> :<i></i></p>
+	    			<p><b>Village Name</b> :<i></i></p>
+	    			<p><b>Tal Name</b> :<i></i></p>
+	    			<p><b>Dist Name</b> :<i></i></p>
+	    			<p><b>State Name</b> :<i></i></p>
+	    		</td>
+	    		<td>
+	    			<h2>Permanant Address Output</h2>
+	    			<p><b>House Number</b> :<i></i></p>
+	    			<p><b>Village Name</b> :<i></i></p>
+	    			<p><b>Tal Name</b> :<i></i></p>
+	    			<p><b>Dist Name</b> :<i></i></p>
+	    			<p><b>State Name</b> :<i></i></p>
+	    		</td>
+	    	</tr>
+	    	
+	    </table> 
+
+	    <script type="text/javascript">
+	    	function sameadd()
+	    	{
+	    		var house=document.getElementsByTagName('input')[0].value;
+	    		var village=document.getElementsByTagName('input')[1].value;
+	    		var tal=document.getElementsByTagName('input')[2].value;
+	    		var dist=document.getElementsByTagName('input')[3].value;
+	    		var state=document.getElementsByTagName('input')[4].value;
+
+	    		document.getElementsByTagName('input')[5].value=house;
+	    		document.getElementsByTagName('input')[6].value=village;
+	    		document.getElementsByTagName('input')[7].value=tal;
+	    		document.getElementsByTagName('input')[8].value=dist;
+	    		document.getElementsByTagName('input')[9].value=state;
+
+	    		document.getElementsByTagName('i')[0].innerText=house;
+	    		document.getElementsByTagName('i')[1].innerText=village;
+	    		document.getElementsByTagName('i')[2].innerText=tal;
+	    		document.getElementsByTagName('i')[3].innerText=dist;
+	    		document.getElementsByTagName('i')[4].innerText=state;
+
+	    		document.getElementsByTagName('i')[5].innerText=house;
+	    		document.getElementsByTagName('i')[6].innerText=village;
+	    		document.getElementsByTagName('i')[7].innerText=tal;
+	    		document.getElementsByTagName('i')[8].innerText=dist;
+	    		document.getElementsByTagName('i')[9].innerText=state;
+	    	}
+
+	    	function diffdata()
+	    	{
+	    		var chouse=document.getElementsByTagName('input')[0].value;
+	    		var cvillage=document.getElementsByTagName('input')[1].value;
+	    		var ctal=document.getElementsByTagName('input')[2].value;
+	    		var cdist=document.getElementsByTagName('input')[3].value;
+	    		var cstate=document.getElementsByTagName('input')[4].value;
+
+	    		var phouse=document.getElementsByTagName('input')[5].value;
+	    		var pvillage=document.getElementsByTagName('input')[6].value;
+	    		var ptal=document.getElementsByTagName('input')[7].value;
+	    		var pdist=document.getElementsByTagName('input')[8].value;
+	    		var pstate=document.getElementsByTagName('input')[9].value;
+
+	    		document.getElementsByTagName('i')[0].innerText=chouse;
+	    		document.getElementsByTagName('i')[1].innerText=cvillage;
+	    		document.getElementsByTagName('i')[2].innerText=ctal;
+	    		document.getElementsByTagName('i')[3].innerText=cdist;
+	    		document.getElementsByTagName('i')[4].innerText=cstate;
+
+	    		document.getElementsByTagName('i')[5].innerText=phouse;
+	    		document.getElementsByTagName('i')[6].innerText=pvillage;
+	    		document.getElementsByTagName('i')[7].innerText=ptal;
+	    		document.getElementsByTagName('i')[8].innerText=pdist;
+	    		document.getElementsByTagName('i')[9].innerText=pstate;
+
+
+	    	}
+	    	
+	    </script>
+</body>
+</html>

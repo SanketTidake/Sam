@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<select onchange="cngval()">
+		<option value="no">Select Your Option</option>
+		<option value="list">List</option>
+		<option value="Table">Table</option>
+		<option value="Div">Div</option>
+		<option value="Section">Section</option>
+		<option value="Details">Details</option>
+		<option value="Feildset">Feildset</option>
+	</select>
+	
+	<section>
+		
+	</section>
+ 
+    <script type="text/javascript">
+		function cngval()
+		{
+			var data=document.getElementsByTagName('select')[0].value;
+			 
+			 switch(data)
+			 {
+			 	case 'list' :{
+			 		document.getElementsByTagName('section')[0].innerHTML=`
+			 		<ol>
+			 		<li>CPP</li>
+			 		<li>Java</li>
+			 		<li>HTML</li>
+			 		<li>CSS</li>
+			 		</ol>
+			 		`;
+
+			 	}break;
+			 	case 'Table' :
+			 	{
+			 		document.getElementsByTagName('section')[0].innerHTML=
+			 		`
+			 		<table border='1'>
+			 		<tr>
+			 		<td>1</td>
+			 		<td>Cpp</Cpptd>
+			 		</tr>
+			 		<tr>
+			 		<td>2</td>
+			 		<td>Java</Cpptd>
+			 		</tr>
+			 		<tr>
+			 		<td>3</td>
+			 		<td>Angular</Cpptd>
+			 		</tr>
+
+			 		</table>`;
+			 	}break;
+			 	case 'Div':{document.getElementsByTagName('section')[0].innerHTML=`
+			 	<div>
+			 	<p> Name = Sanket</p>
+			 	<p> Name = Sam</p>
+			 	<p> Name = Sham</p>
+			 	<p> Name = Sunder</p>
+			 	</div>
+			 	`}break;
+			 	case 'Section':{}break;
+			 	case 'Details':{}break;
+			 	case 'Feildset':{}break;
+			 	default :{document.getElementsByTagName('section')[0].innerHTML=`No Case Match`}
+
+			 }
+		}
+	</script>
+
+</body>
+</html>

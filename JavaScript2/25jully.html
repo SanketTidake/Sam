@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		ul{
+			background-color: orange;
+			padding: 10px 20px;
+		}
+		li{
+			padding: 10px 20px;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var data=[
+			{menuName:"Home"},
+			{menuName:"About"},
+			{menuName:"Services"},
+			{menuName:"Blogs"},
+			{menuName:"News"},
+			{menuName:"Contact"},
+			{menuName:"Login"}
+			];
+
+		document.write("<ul>");
+		for(var a=0; a<=6; a++)
+		{
+			document.write("<li>"+data[a].menuName+"</li>");
+		}
+		document.write("</ul>");
+
+		var state=[
+			{stateName:'Select Your State'},
+			{stateName:'Maharashtra'},
+			{stateName:'Rajsthan'},
+			{stateName:'Bihar'},
+			{stateName:'Punjab'},
+			{stateName:'Uttar-Pradesh'}
+			];
+
+		document.write("<select>");
+			for(var s=0; s<=state.length; s++)
+		{
+		    document.write("<option>"+state[s].stateName+"</option>");
+	    }
+		document.write("</select>");
+	</script>
+
+</body>
+</html>

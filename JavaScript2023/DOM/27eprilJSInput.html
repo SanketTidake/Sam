@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form></form>
+	<h1 onclick="inp()">Click H1 To Create Tag</h1>
+	<script type="text/javascript">
+		function inp()
+		{
+			var t=document.createElement('input');
+			var typ=prompt("suggest the type");
+			t.type=typ;
+			t.style.backgroundColor='orange'
+			var frm=document.getElementsByTagName('form')[0];
+			frm.appendChild(t);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+     
+
+	<script type="text/javascript">
+		var data=[
+		{id:1,username:'sam',password:'45068792'},
+		{id:2,username:'sham',password:'0164+865'},
+		{id:3,username:'sunder',password:'#3166'},
+		{id:4,username:'sujit',password:'@hgf248'},
+		{id:5,username:'shreysh',password:'0765'},
+		{id:6,username:'shalu',password:'cbf65'},
+		{id:7,username:'samrat',password:'546thdt'},
+		{id:8,username:'sanket',password:'468+'},
+		{id:9,username:'shekhar',password:'#;fghf652'},
+		{id:10,username:'samarth',password:'sam@2485'}
+		];
+		var t=0;
+		do{
+			document.write
+			(`<details>
+     	      <summary>${data[0].username}</summary>
+     	      <ul>
+     	      <li> ID:${data[t].id}</li>
+     	      <li> Username:${data[t].username}</li>
+     	      <li> Password:${data[t].password}</li>
+     	      </ul>
+              </details>
+            `);
+			t++;
+		}
+		while(t<12);
+	</script>
+
+</body>
+</html>

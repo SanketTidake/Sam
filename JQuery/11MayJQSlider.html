@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYT_N-sHnEpB8V2Gl9Ei6fH_wjn93W7D_h4g&usqp=CAU" width="400" height="300" class="A">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYbF4B7Y0iI1jUEzPoswFpoY4ohCqKQMFakg&usqp=CAU" width="400" height="300" class="B">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMTPEHgH1nQ7kw-1xOKLOg8Q9Ry0SxcfaBxw&usqp=CAU" width="400" height="300" class="C">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvK46RuiQW_2ZVBBla3oPhK0-jQgXZ_Z5jQ&usqp=CAU" width="400" height="300" class="D">
+
+	<div>
+		<input type="radio" name="s" id="A">
+		<input type="radio" name="s" id="B">
+		<input type="radio" name="s" id="C">
+		<input type="radio" name="s" id="D">
+    </div>
+
+    <script type="text/javascript">
+    	$('.A').show();
+    	$('.B').hide();
+    	$('.C').hide();
+    	$('.D').hide();
+
+    	$('#A').click(function(){
+    	$('.A').show();
+    	$('.B').hide();
+    	$('.C').hide();
+    	$('.D').hide();
+    	})
+
+    	$('#B').click(function(){
+    	$('.A').hide();
+    	$('.B').show();
+    	$('.C').hide();
+    	$('.D').hide();
+    	})
+
+    	$('#C').click(function(){
+    	$('.A').hide();
+    	$('.B').hide();
+    	$('.C').show();
+    	$('.D').hide();
+    	})
+
+    	$('#D').click(function(){
+    	$('.A').hide();
+    	$('.B').hide();
+    	$('.C').hide();
+    	$('.D').show();
+    	})
+    </script>
+
+</body>
+</html>

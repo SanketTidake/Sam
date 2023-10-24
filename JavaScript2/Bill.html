@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		section{
+			width: 400px;
+			background-color: orange;
+			padding: 20px;
+			margin: 20px;
+		}
+		h1{
+			text-align: center;
+		}
+		button{
+			padding: 10px 20px;
+			background-color: teal;
+			border: none;
+			margin: 10px 20px;
+			color: white;
+            border-radius: 50px;  
+            position: relative;
+            left: 150px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Bill Book</h1>
+		<hr>
+		<p>Customer Name :<b></b></p>
+		<p>Customer Mno :<b></b></p>
+		<p>Customer Amount :<b></b></p>
+		<p>Customer GST :<b></b></p>
+		<hr>
+		<p>Total :<b></b></p>
+	</section>
+	<button onclick="ST()">Create Bill</button>
+
+	<button onclick="a()">Print</button>
+
+	<script type="text/javascript">
+
+		function a(){
+			document.getElementsByTagName('button')[0].style.visibility="hidden";
+			document.getElementsByTagName('button')[1].style.visibility="hidden";
+			window.print();
+		}
+		
+		function ST()
+		{
+			var Name=prompt("Enter Customer Name");
+			document.getElementsByTagName('b')[0].innerText=Name;
+			var Cm=prompt("Enter Customer Mobile Number");
+			document.getElementsByTagName('b')[1].innerText=Cm;
+			var CA=prompt('Enter Amount');
+			document.getElementsByTagName('b')[2].innerText=CA;
+
+
+			var gst=CA*18/100;
+			document.getElementsByTagName('b')[3].innerText=gst;
+			var total=parseInt(CA)+parseInt(gst);
+            document.getElementsByTagName('b')[4].innerText=total;
+
+
+
+		}
+	</script>
+
+</body>
+</html>

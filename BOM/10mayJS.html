@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		h1{
+			background-color: orange;
+			padding: 7px;
+		}
+		h2{
+			background-color: yellow;
+			padding: 7px;
+		}
+		h3{
+			background-color: greenyellow;
+			padding: 7px;
+		}
+	</style>
+</head>
+<body>
+	<h1></h1>
+	<h2></h2>
+	<h3></h3>
+    <script type="text/javascript">
+    	var myPassword='Sanket.07';
+    	document.getElementsByTagName('h1')[0].innerText=myPassword;
+    	var inc=window.btoa(myPassword);
+    	document.getElementsByTagName('h2')[0].innerText=inc;
+
+    	var decc=window.atob(inc);
+    	document.getElementsByTagName('h3')[0].innerText=decc;
+
+
+    </script>
+</body>
+</html>

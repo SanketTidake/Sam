@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		section{
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+			margin: 150px;
+			transform: translate(200px, 300px);
+			animation-name: s;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes s{
+			0%{transform: translate(0px, 0px);}
+			20%{transform: translate(378px, 98px);}
+			40%{transform: translate(16px, 329px);}
+			60%{transform: translate(114px, 139px);}
+			80%{transform: translate(378px, 346px);}
+			100%{transform: translate(0px, 0px);}
+
+		}
+		button{
+			padding: 10px 20px;
+			border-radius: 50px;
+			background-color: blue;
+			color: white;
+			margin: 40px;
+			animation-name: btn;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes btn{
+			0%{border: 4px solid orange;}
+			20%{border: 4px solid red;}
+			40%{border: 4px solid yellow;}
+			60%{border: 4px solid teal;}
+			80%{border: 4px solid pink;}
+			100%{border: 4px solid green;}
+		}
+	</style>
+</head>
+<body>
+	<section></section>
+
+	<button>Click Here</button>
+
+</body>
+</html>

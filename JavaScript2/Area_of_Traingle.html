@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		section{
+			background-color: orange;
+			position: relative;
+			left: 100px;
+			top: 100px;
+			padding: 10px 20px;
+			margin: 10px 20px;
+			width: 250px;
+			border-radius: 50px;
+		}
+		h1{
+			text-align: center;
+		}
+		button{
+			background-color: teal;
+			color: white;
+			padding: 6px 8px;
+			border-radius: 50px;
+			position: relative;
+			left: 50px;
+			border: none;
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Area Of Traingle</h1>
+		<p>Enter Base :<b></b></p>
+		<p>Enter Height :<b></b></p>
+		<p>This Is Area  :<b></b></p>
+		<button onclick="Area()">Find Area</button>
+	</section>
+
+	<script type="text/javascript">
+		function Area() {
+			var Base=prompt("Enter The Value Of Base");
+			document.getElementsByTagName('b')[0].innerText=Base;
+
+			var Height=prompt("Enter The Value Of Height");
+			document.getElementsByTagName('b')[1].innerText=Height;
+
+			var Area=parseInt(Height) * parseInt(Base) /2;
+			document.getElementsByTagName('b')[2].innerText=Area;
+
+		}
+	</script>
+
+</body>
+</html>

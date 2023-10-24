@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		p{
+			background-color: teal;
+			padding: 10px;
+			margin: 10px;
+			color: white;
+		}
+		div{
+			background-color: green;
+			padding: 10px;
+			margin: 10px;
+			color: white;
+		}
+		section{
+			background-color: orangered;
+			padding: 10px;
+			margin: 10px;
+			color: white;
+		}
+		span{
+			margin: 70px;
+		}
+	</style>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		var a=0;
+		while(a<12)
+		{
+			document.write("All Is Well <br>");
+			a++;
+		}
+		var std=[
+			{id:1,name:"Sam",mark:77},
+			{id:2,name:"Sham",mark:70},
+			{id:3,name:"Soham",mark:80},
+			{id:4,name:"Puja",mark:70},
+			{id:5,name:"Raj",mark:67},
+			{id:6,name:"Rahul",mark:87},
+			{id:7,name:"Vivek",mark:67},
+			{id:8,name:"Sunny",mark:33},
+			{id:9,name:"Sunder",mark:47},
+			{id:10,name:"Pyarelal",mark:78},
+			{id:11,name:"Poonawala",mark:25},
+			{id:12,name:"Vaastav",mark:36}
+
+			];
+
+		var allStd=0;
+		while(allStd<std.length)
+		{
+			document.write(`
+				<p>
+		            <span>ID :${std[allStd].id}</span>
+		            <span>Name :${std[allStd].name}</span>
+	              	<span>Mark :${std[allStd].mark}</span>
+             	</p>
+
+				`);
+			allStd++;
+		}
+
+		var pass=0;
+		while(pass<std.length)
+		{
+			if(std[pass].mark>35){
+				document.write(`
+					<div>
+		                <span>ID :${std[pass].id}</span>
+		                <span>Name :${std[pass].name}</span>
+	                	<span>Mark :${std[pass].mark}</span>
+             	    </div>
+					`);
+			}
+			pass++;	
+		}
+
+		var fail=0;
+		while(fail<std.length)
+		{
+			if(std[fail].mark<35)
+			{
+				document.write(`
+						<section>
+		                    <span>ID :${std[fail].id}</span>
+		                    <span>Name :${std[fail].name}</span>
+	                	    <span>Mark :${std[fail].mark}</span>
+             	        </section>
+					`);
+			}
+			fail++;
+		}
+	</script>
+
+</body>
+</html>

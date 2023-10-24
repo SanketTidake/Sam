@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 id="A" class="AA" align="left">First text</h1>
+	<h1 id="B" class="BB" align="right">Second text</h1>
+	<h1 id="C" class="CC" align="center">Third text</h1>
+	<h1 id="D" class="DD" align="left">Four text</h1>
+	<h1 id="E" class="EE" align="right">Five text</h1>
+	<h1 id="F" class="FF" align="center">Six text</h1>
+
+	<input type="text" name="name_one" style="color: red;"><br>
+	<input type="date" name="name_two" style="color: skyblue;"><br>
+	<input type="color" name="name_three" style="color: orange;"><br>
+	<input type="password" name="name_four" style="color: yellow;"><br>
+	<input type="email" name="name_five" style="color: teal;"><br>
+	<input type="time" name="name_six" style="color: cyan;"><br>
+
+	<section></section>
+	<section></section>
+	<section></section>
+	<section></section>
+	<section></section>
+	<section></section>
+
+	<script type="text/javascript">
+		var s=document.getElementsByTagName('h1');
+
+		for(var a=0;a<6;a++)
+		{
+			document.getElementsByTagName('section')[a].innerHTML=`
+			<ol>
+			<li>ID : ${s[a].id}</li>
+			<li>Class : ${s[a].align}</li>
+			<li>InnerText : ${s[a].innerText}</li>
+			</ol>
+			`;
+		}
+	</script>
+
+</body>
+</html>

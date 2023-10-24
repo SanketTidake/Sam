@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="bb()">Back</button>
+	<button onclick="nn()">Next</button>
+	<button onclick="bbb()">2 page back</button>
+	<button onclick="nnn()">2 page next</button>
+
+
+
+	<script type="text/javascript">
+		function bb() 
+		{
+			history.back();
+		}
+		function nn() 
+		{
+			history.next();
+		}
+		function bbb() 
+		{
+			history.go(-2);
+		}
+		function nnn() 
+		{
+			history.go(2);
+		}
+	</script>
+
+</body>
+</html>

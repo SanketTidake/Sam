@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#A{
+			background-color: orange;
+			border-radius: 30px;
+		}
+		b{
+			padding: 11px;
+			margin: 21px;
+		}
+		legend{
+			background-color: teal;
+			padding: 6px;
+			margin: 5px;
+			border-radius: 30px;
+			color: white;
+		}
+		fieldset{
+			margin: 35px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var data=[
+             
+               {pc:25, model:"Lenovo"},
+               {pc:15, model:"HP"},
+               {pc:30, model:"DELL"},
+               {pc:45, model:"ASUS"},
+               {pc:25, model:"Lenovo"},
+               {pc:12, model:"Other"},
+               {pc:10, model:"MacBook"},
+               {pc:10, model:"ASUS"},
+               {pc:10, model:"Lenovo"}
+			];
+
+		var p=prompt("Enter a Name Something HP, MacBook, Lenovo");
+
+		document.write(`
+			<fieldset id="A">
+		          <legend> ${p} </legend>
+		          <ul>
+			`)
+		var d=0;
+		do{
+			if(data[d].model==p)
+            document.write(`
+			      <li>Quantity : <b> ${data[d].pc}</b> Name :<b>${data[d].model} </b> <br></li>
+		     
+                `);
+            d++;
+        }
+		
+		while(d<data.length);
+
+		document.write(`
+			  </ul>
+	            </fieldset>
+			`)
+
+
+
+	</script>
+
+</body>
+</html>

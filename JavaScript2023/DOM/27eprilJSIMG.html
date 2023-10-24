@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="st"></div>
+	<button onclick="img()">Create Image Tag</button>
+	<script type="text/javascript">
+		function img()
+		{
+			var imgTag=document.createElement('img');
+			var url=prompt("Enter Url For Image");
+			    imgTag.src=url;
+			    imgTag.width='300';
+			    imgTag.height='400';
+			var d=document.getElementById('st');
+			    d.appendChild(imgTag);
+		}
+	</script>
+
+</body>
+</html>

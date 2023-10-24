@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		div{
+			padding: 20px;
+			background-color: orange;
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<button id="A1">Hide/Show</button>
+	<button id="A2">SlideDown</button>
+	<button id="A3">SlideUp</button>
+	<button id="A4">slidetoggle</button>
+
+	<button id="B1">fadeIn</button>
+	<button id="B2">fadeOut</button>
+	<button id="B3">fadeToggle</button>
+
+	<script type="text/javascript">
+		$('#B1').click(function(){
+			$('div').fadeIn();
+		})
+		$('#B2').click(function(){
+			$('div').fadeOut(4000);
+		})
+		$('#B3').click(function(){
+			$('div').fadeToggle();
+		})
+
+
+		$('#A1').click(function(){
+		$('div').toggle();
+		})
+
+		$('#A2').click(function(){
+		$('div').SlideDown();
+		})
+
+		$('#A3').click(function(){
+		$('div').SlideUp();
+		})
+
+		$('#A4').click(function(){
+		$('div').slideToggle();
+		})
+	</script>
+
+</body>
+</html>

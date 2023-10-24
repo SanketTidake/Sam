@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<section></section>
+	<button onclick="createTag()">Click Here</button>
+	<script type="text/javascript">
+		function createTag()
+		{
+			var tagName=prompt('user enter your tag');
+			var tag=document.createElement('tagName');
+			var txt=prompt("Enter a Text for the Tag");
+			var data=document.createTextNode(txt);
+			    tag.appendChild(data);
+			var sec=document.querySelector('section');
+                sec.appendChild(tag);
+		}
+	</script>
+</body>
+</html>

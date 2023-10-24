@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<table width="100%" height="500" border="1">
+		<tr>
+			<td>
+				<label>Enter Your Name</label>
+				<input type="" name="" id="a" placeholder="Name">
+				<br>
+				<br>
+				<label>Enter Your Mobile Number</label>
+				<input type="" name="" id="b" placeholder="Mobile No">
+				<br>
+				<br>
+				<label>Enter Your E-Mail Id</label>
+				<input type="" name="" id="c" placeholder="Mail">
+				<br>
+				<br>
+				<label>Enter Your Address</label>
+				<input type="" name="" id="d" placeholder="Address">
+				<br>
+				<br>
+				<button>Same Address</button>
+
+			</td>
+			<td>
+				<input type="" name="" id="aa"><br>
+				<br>
+				<input type="" name="" id="bb"><br>
+				<br>
+				<input type="" name="" id="cc"><br>
+				<br>
+				<input type="" name="" id="dd"><br>
+			</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$('button').click(function(){
+			var fval=$('#a').val();
+			         $('#aa').val(fval);
+		})
+		$('button').click(function(){
+			var fval=$('#b').val();
+			         $('#bb').val(fval);
+		})
+		$('button').click(function(){
+			var fval=$('#c').val();
+			         $('#cc').val(fval);
+		})
+		$('button').click(function(){
+			var fval=$('#d').val();
+			         $('#dd').val(fval);
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		section{
+			display: flex;
+		}
+		div{
+			flex: 1;
+			padding: 20px;
+			margin: 15px;
+			border: 2px solid orange;
+			background-color: greenyellow;
+		}
+		button{
+			background-color: blue;
+			color: white;
+			border-radius: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Bill Generator App</h1>
+	<section>
+		<div>
+			<label>Enter Customer Name</label><br>
+			<input type="text" name=""><br>
+			<label>Enter Cutomer MailId</label><br>
+			<input type="mail" name=""><br>
+			<label>Enter Amount</label><br>
+			<input type="text" name=""><br><br>
+			<button onclick="Bill()">Genrete Bill</button>
+		</div>
+		<div>
+			<h3 align="center">Your Bill Is :</h3>
+			<p><b>Customer Name :</b> <i></i></p>
+			<p><b>Customer Email :</b> <i></i></p>
+			<p><b>Amount :</b> <i></i></p>
+			<p><b>GST :</b> <i>18%</i></p>
+			<p><b>GST Amount:</b> <i></i></p>
+
+			<h1>Total Bill :<i></i></h1>
+			<p>Visit Again....! Have A Nice Day.</p>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		function Bill()
+		{
+			var cname=document.getElementsByTagName('input')[0].value;
+			var email=document.getElementsByTagName('input')[1].value;
+			var camount=parseInt(document.getElementsByTagName('input')[2].value);
+            var gst=camount*18/100;
+            var total=camount+gst;
+
+			document.getElementsByTagName('i')[0].innerText=cname;
+			document.getElementsByTagName('i')[1].innerText=email;
+			document.getElementsByTagName('i')[2].innerText=camount;
+			document.getElementsByTagName('i')[4].innerText=gst;
+			document.getElementsByTagName('i')[5].innerText=total;
+		}
+	</script>
+
+</body>
+</html>

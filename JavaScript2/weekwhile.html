@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var weekInvest=[
+			{Mango:35,Apple:50,Graps:40},
+			{Mango:25,Apple:59,Graps:80},
+			{Mango:39,Apple:40,Graps:20},
+			{Mango:12,Apple:60,Graps:30},
+			{Mango:65,Apple:90,Graps:10},
+			{Mango:40,Apple:25,Graps:60},
+			{Mango:10,Apple:70,Graps:25}
+			];
+
+
+		var TotalMango=0;
+		var TotalApple=0;
+		var TotalGraps=0;
+
+		var a=0;
+		while(a<weekInvest.length)
+		{
+			TotalMango += weekInvest[a].Mango;
+			TotalApple += weekInvest[a].Apple;
+			TotalGraps += weekInvest[a].Graps;
+			a++;
+		}
+		document.write(TotalMango);
+		document.write('<br>');
+		document.write(TotalApple);
+		document.write('<br>');
+		document.write(TotalGraps);
+		document.write('<br>');
+		
+
+	</script>
+
+
+</body>
+</html>

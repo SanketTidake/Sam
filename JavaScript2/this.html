@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="color(this.innerText)">Blue</button>
+	<button onclick="color(this.innerText)">Yellow</button>
+	<button onclick="color(this.innerText)">green</button>
+	<button onclick="color(this.innerText)">Black</button>
+	<button onclick="color(this.innerText)">Orange</button>
+	<button onclick="color(this.innerText)">Red</button>
+	<button onclick="color(this.innerText)">Purple</button>
+	<button onclick="color(this.innerText)">white</button>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<select onchange="MSD()">
+		<option value="text">text</option>
+		<option value="password">password</option>
+		<option value="radio">radio</option>
+		<option value="button">button</option>
+		<option value="date">date</option>
+		<option value="time">time</option>
+		<option value="checkbox">checkbox</option>
+		<option value="email">email</option>
+		<option value="number">number</option>
+		<option value="hidden">hidden</option>
+	</select>
+	<input type="" name="">
+
+
+	<script type="text/javascript">
+		function color(data)
+		{
+			document.body.style.backgroundColor=data;
+		}
+
+		function MSD() 
+		{
+			var ST=document.getElementsByTagName('select')[0].value;
+			document.getElementsByTagName('input')[0].type=ST;
+		}
+
+	</script>
+
+</body>
+</html>

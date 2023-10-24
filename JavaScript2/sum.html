@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1></h1>
+	<h1></h1>
+
+	<button onclick="del()">Delete Storage</button>
+
+	<script type="text/javascript">
+
+		var _user=prompt("Enter user Name");
+		var _pass=prompt("Enter Password");
+
+		window.sessionStorage.setItem("Username",_user);
+		window.sessionStorage.setItem("Password",_pass);
+
+		var _getUser=window.sessionStorage.getItem("Username");
+		document.getElementsByTagName('h1')[0].innerText=_getUser;
+		var _getPass=window.sessionStorage.getItem("Password");
+		document.getElementsByTagName('h1')[1].innerText=_getPass;
+
+		function del()
+	    {
+			window.sessionStorage.removeItem("Username");
+			window.sessionStorage.removeItem("Password");
+		}
+
+
+
+
+
+		// var a=10;
+		// var b=5;
+		// var sum=a+b;
+		// document.write(sum);
+
+		// var m=5;
+		// var n=6;
+		// document.write(m+=n);
+	</script>
+
+</body>
+</html>

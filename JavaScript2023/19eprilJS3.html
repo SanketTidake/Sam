@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+		
+	</table>
+	<script type="text/javascript">
+		var tital='www.TechRel.com.';
+
+		var emp_data=
+		[
+		{id:1,name:'Raj',position:'Java Developer',sallary:55555,contact:624522},
+		{id:2,name:'Ram',position:'Python Developer',sallary:526555,contact:666614566},
+		{id:3,name:'Ravi',position:'Angular Developer',sallary:5855,contact:756666666},
+		{id:4,name:'Rahul',position:'Frontend Developer',sallary:5524832,contact:88666666},
+		{id:5,name:'Rajesh',position:'Backend Developer',sallary:144155555,contact:789666666},
+		{id:6,name:'Rajiv',position:'SQL Developer',sallary:21555555,contact:3214666666},
+		{id:7,name:'sham',position:'PHP Developer',sallary:5514555555,contact:456666666},
+		{id:8,name:'Rakesh',position:'Full Stack Developer',sallary:548614,contact:978666666}
+		];
+
+		document.write
+
+		(`
+			<h1>${tital}</h1>
+			<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Position</th>
+				<th>Salary</th>
+				<th>Contact</th>
+			</tr>
+		</thead>
+		<tbody>`);
+
+		var ii=0;
+		while(ii<8)
+		{
+			document.write
+			(`<tr>
+				<td>${emp_data[ii].id}</td>
+				<td>${emp_data[ii].name}</td>
+				<td>${emp_data[ii].position}</td>
+				<td>${emp_data[ii].sallary}</td>
+				<td>${emp_data[ii].contact}</td>
+				
+			</tr>`);
+			ii++;
+		}
+
+		document.write(`</tbody> </table>`);
+	</script>
+
+</body>
+</html>

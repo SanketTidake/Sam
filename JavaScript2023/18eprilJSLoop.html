@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		ul{
+			background: orange;
+			padding: 10px;
+			margin: 10px;
+			width: 200px;
+			float: left ;
+
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+        var data=
+        [
+        {name: 'Sam',age:22,email:'sam77@gmail.com', Phone:7777777},
+        {name: 'Ram',age:23,email:'ram5@gmail.com', Phone:666666},
+        {name: 'Sham',age:24,email:'sham4@gmail.com', Phone:55555},
+        {name: 'Sunder',age:25,email:'sun6@gmail.com', Phone:44444},
+        {name: 'Raj',age:17,email:'raj7@gmail.com', Phone:9922077},
+        {name: 'Ravi',age:20,email:'ravi6@gmail.com', Phone:121212},
+        {name: 'Rahul',age:26,email:'rahul11@gmail.com', Phone:88888},
+        {name: 'MS',age:41,email:'ma7@gmail.com', Phone:7070707}
+        ] 
+
+        for(var s=0;s<8;s++)
+        {
+        	document.write
+        	(`
+        <ul>
+          <li> index: ${s}</li>
+		  <li> Name: ${data[s].name}</li>
+		  <li> Age: ${data[s].age}</li>
+		  <li> Email: ${data[s].email} </li>
+	   	  <li> Phone: ${data[s].phone}</li>
+	    </ul>
+	    <hr>`);
+        }
+
+		/*var str="Hello";
+		for(var a=0; a<100; a++)
+		{
+			document.write(`I Am ${a}Going To Say : ${str} </p>`);
+		}*/
+
+	</script>
+
+</body>
+</html>

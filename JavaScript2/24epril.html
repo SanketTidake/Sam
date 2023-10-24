@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			background-color: orange;
+			width: 200px;
+			margin: 15px;
+			padding: 10px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>ID :</p>
+		<p>Name :</p>
+		<p>Contact :</p>
+		<p>Address :</p>
+	</div>
+	<!-- <ul> 
+		<li>ID :</li>
+		<li>Name :</li>
+		<li>Contact :</li>
+		<li>Address :</li>
+	</ul> -->
+	<script type="text/javascript">
+
+		var data=[
+			{id:1, name:'Sam', contact:'75577557', address:'Rahuri'},
+			{id:2, name:'Sunny', contact:'75577557', address:'mumbai'},
+			{id:3, name:'Raj', contact:'75577557', address:'Kolhapur'},
+			{id:4, name:'Katil', contact:'75577557', address:'latur'},
+			{id:5, name:'Ravan', contact:'75577557', address:'pune'},
+			{id:6, name:'Bahubali', contact:'75577557', address:'nagar'},
+			{id:7, name:'Puja', contact:'75577557', address:'Rahuri'}
+			]
+		    
+            for(var s=0; s<7; s++)
+            {
+            	document.write
+            	(`
+            		<div>
+	                	<p>ID :${data[s].id}</p>
+	                    <p>Name :${data[s].name}</p>
+	                 	<p>Contact :${data[s].contact}</p>
+	                 	<p>Address :${data[s].address}</p>
+	                </div>
+            	`);
+            }
+
+        
+
+		// for(var a=0; a<100; a++)
+		// {
+		// 	// document.write("<h1>Jay Shree Ram..... "+a+"</h1> ");
+		// 	document.write(`<h1> Har Har Mahadev..... ${a}</h1>`);
+		// }
+	</script>
+
+</body>
+</html>

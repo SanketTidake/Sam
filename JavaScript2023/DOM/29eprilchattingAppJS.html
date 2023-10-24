@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		section{
+			width: 320px;
+			height: 500px;
+			border-left: 2px solid black;
+			border-right: 2px solid black;
+			border-top: 40px solid black;
+			border-bottom: 40px solid black;
+			border-radius: 15px;
+			margin:70px ;
+			margin-left: 450px;
+		}
+		div{
+			width: 100%;
+			height: 92%;
+			overflow: scroll;
+			background-color: ;
+		}
+		button{
+			background-color: green;
+			border: none;
+			padding: 2px 4px;
+			color: white;
+			margin: 0px 1px;
+			border-radius: 50px;
+		}
+
+		span{
+			background-color: skyblue;
+			color: ;
+			padding: 10px;
+			border-radius: 10px;
+			margin: 2px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div>
+			
+		</div>
+		<button onclick="my()">Me</button>
+		<button onclick="myimg()">Iimg</button>
+		<button onclick="myvideo()">MyVideo</button>
+		<button onclick="friend()">Friend</button>
+		<button onclick="Fimg()">Fimg</button>
+		<button onclick="Fvideo()">FVideo</button>
+	</section>
+
+	<script type="text/javascript">
+		function my() 
+		{
+			var text=prompt("Enter Your SMS");
+			var p=document.createElement('p');
+			var span=document.createElement('span');
+			span.innerText=text;
+			p.appendChild(span);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+		function friend() 
+		{
+			var text=prompt("Enter Your SMS");
+			var p=document.createElement('p');
+			var span=document.createElement('span');
+			span.innerText=text;
+			p.style.textAlign='right'
+			p.appendChild(span);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+		function myimg() 
+		{
+			var text=prompt("Enter Your image URl");
+			var p=document.createElement('p');
+			var img=document.createElement('img');
+			img.src=text;
+			img.width='100';
+			img.height='100';
+			p.appendChild(img);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+		function Fimg() 
+		{
+			var text=prompt("Enter Your image URl");
+			var p=document.createElement('p');
+			var img=document.createElement('img');
+			img.src=text;
+			img.width='100';
+			img.height='100';
+			p.style.textAlign='right'
+			p.appendChild(img);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+		function myvideo() 
+		{
+			var text=prompt("Enter Your video URl");
+			var p=document.createElement('p');
+			var =document.createElement('');
+			img.src=text;
+			img.width='100';
+			img.height='100';
+			p.style.textAlign='right'
+			p.appendChild(img);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+		function Fvideo() 
+		{
+			var text=prompt("Enter Your video URl");
+			var p=document.createElement('p');
+			var =document.createElement('');
+			img.src=text;
+			img.width='100';
+			img.height='100';
+			p.style.textAlign='right'
+			p.appendChild(img);
+
+			var d=document.querySelector('div');
+			d.appendChild(p);
+		}
+
+
+
+
+
+	</script>
+
+</body>
+</html>
